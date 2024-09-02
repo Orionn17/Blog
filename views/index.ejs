@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs") %>
+<div class="d-flex justify-content-center align-items-center head" style="height: 100vh;">
+    <div class="text-center">
+        <h4 id="welcomeText">enjoy reading our stories...</h4>
+        <form action="/new" method="GET" style="display:block;">
+            <button type="submit"  class="btn btn-dark btn-lg">or create one on your own!</button>
+        </form>
+    </div>
+  </div>
+
+<div class="text-center" id="stories">
+    <ul class="list-group list-group-flush mb-5">
+        <% posts.forEach((post, index) => { %>
+        <li class="list-group-item">
+            <h2><a href="/open/<%= index %>"><%= post.title %></a></h2>
+        </li> 
+        <% }); %>
+    </ul>
+</div>
+<%- include("partials/footer.ejs") %>

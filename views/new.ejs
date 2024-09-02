@@ -1,0 +1,13 @@
+<%- include("partials/header.ejs") %>
+
+<form method="POST" action="/new" id="form" class="p-4 border rounded shadow-lg bg-light">
+    <div class="form-group">
+      <input type="text" class="form-control form-control-lg mb-3" name="title" placeholder="Title of text" required>
+    </div>
+    <div class="form-group">
+      <textarea class="form-control form-control-lg mb-3" name="content" placeholder="Enter the text here." rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-dark btn-lg w-100" id="submit">Create a post!</button>
+</form>
+  
+<%- include("partials/footer.ejs") %>

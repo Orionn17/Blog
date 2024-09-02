@@ -1,0 +1,13 @@
+<%- include("partials/header.ejs") %>
+
+<form action="/edit/<%= postId %>" method="POST" id="form" class="p-4 border rounded shadow-lg bg-light">
+    <div class="form-group">
+      <input type="text" class="form-control form-control-lg mb-3" name="title" value="<%= post.title %>" required>
+    </div>
+    <div class="form-group">
+        <textarea class="form-control form-control-lg mb-3" name="content" rows="5" required><%- post.content %></textarea>
+    </div>
+    <button type="submit" class="btn btn-dark btn-lg w-100">Save changes.</button>
+</form>
+
+<%- include("partials/footer.ejs") %>

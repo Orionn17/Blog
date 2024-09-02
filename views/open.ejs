@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs") %>
+
+<div class="text-center" id="open">
+    <h2 id="titleOpen"><%= post.title %></h2>
+    <p id="textOpen"><%= post.content %></p> 
+</div>
+
+<div class="container text-center mt-4 mb-4" id="buttonsOpen">
+    <div class="row justify-content-center">
+        <div class="col-auto">
+            <form action="/edit/<%= postId %>" method="GET" class="d-inline">
+                <button type="submit" class="btn btn-outline-dark btn-lg">Edit</button>
+            </form>
+            <form action="/delete/<%= postId %>" method="POST" class="d-inline">
+                <button type="submit" class="btn btn-outline-danger btn-lg">Delete</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer.ejs") %>

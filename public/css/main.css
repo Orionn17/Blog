@@ -1,0 +1,96 @@
+* {
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+#welcomeText{
+    text-shadow: 2px 2px 2px black ;
+    font-size: 50px;
+    padding-bottom: 5px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    color: rgb(42, 42, 42) !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color:seagreen !important; 
+    text-decoration:none; 
+    cursor:pointer; 
+}
+
+#submit{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,75,1) 64%, rgba(0,255,158,1) 100%); 
+}
+
+.head{
+    height: 200px;
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,75,1) 64%, rgba(0,255,158,1) 100%);  
+    justify-content: center;
+    align-items: center;  
+    color: white;
+    margin-bottom: 30px;
+}
+
+.footer {
+    background: rgb(49, 49, 49);
+    color: white;
+    width: 100%;
+    text-align: center;
+    min-height: 70px;
+    margin: 0;
+    margin-top: 20px;
+}
+
+
+
+ul{
+    margin-bottom: 20px;
+}
+
+main {
+    flex: 1;
+}
+
+#textOpen,#goodbye{
+    font-family: "Montserrat", sans-serif;
+}
+
+#open{
+    margin: 10px 60px 20px 60px;
+}
+
+#buttonsOpen {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#titleOpen {
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.footer p {
+    font-size: 16px;
+    padding: 20px;
+    margin: 0;
+}
+
+
+
